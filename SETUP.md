@@ -36,20 +36,6 @@ gh auth login
 direnv allow
 ```
 
-`tgcli`, `googleworkspace/cli`, `himalaya` и связанные Claude plugins/skills — опциональные. Базовый `make check` их не проверяет.
-
-Если нужны эти интеграции, установите их отдельно:
-
-```bash
-make extra
-```
-
-И проверьте отдельно:
-
-```bash
-make extra-check
-```
-
 ## Проверка установки
 
 После авторизации прогоните базовую проверку окружения:
