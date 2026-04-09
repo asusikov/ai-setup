@@ -5,7 +5,7 @@ The language used to build the application is Golang. The BubbleTea framework is
 
 ## Key commands
 - `go run .` — run application
-- `go test .` — run tests
+- `go test ./...` — run tests
 
 ## Conventions
 The business domain has its own package. Implement business logic in separate structs called "use-cases" — don't put it in commands. Use dependency inversion to make modules with low cohesion. The test coverage of use-cases should be no lower than 80%.
