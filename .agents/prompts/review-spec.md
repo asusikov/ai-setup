@@ -20,4 +20,4 @@ For each fail:
 
 If all criteria pass — write “0 comments, spec is ready for implementation.”
 
-Write you review in file with name "review-spec.md" and place it in folder with specifications for task. 
+Write you review in file with name "spec-review.md" and place it in folder with specifications for task. If review already exists - don't remove file, just replace all text. 
