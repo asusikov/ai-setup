@@ -1,0 +1,4 @@
+[generate-plan]
+description = "Generate plan from GitHub issue"
+usage = 'arg "<task_number>" help="GitHub issue number"'
+run = ".agents/generate_plan.sh ${usage_task_number?}"

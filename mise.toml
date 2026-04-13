@@ -8,3 +8,6 @@ node = "latest"
 ruby = "3.4.8"
 "npm:playwright-cli" = "latest"
 go = "1.26.2"
+
+[task_config]
+includes = [".mise/tasks/*.toml"]
