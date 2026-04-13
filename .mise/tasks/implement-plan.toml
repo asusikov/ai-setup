@@ -1,0 +1,4 @@
+[implement-plan]
+description = "Implement plan for a task"
+usage = 'arg "<task_number>" help="GitHub issue number"'
+run = ".agents/implement_plan.sh ${usage_task_number?}"
