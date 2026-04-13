@@ -14,4 +14,4 @@ fi
 
 PROMPT=$(sed "s/{{TASK_NUMBER}}/$TASK_NUMBER/g" "$PROMPT_FILE")
 
-claude -p "$PROMPT" --allowedTools "Write,Edit" --model claude-opus-4-6
+codex "$PROMPT"
