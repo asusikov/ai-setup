@@ -12,6 +12,6 @@ if [[ ! -f "$PROMPT_FILE" ]]; then
   exit 1
 fi
 
-PROMPT=$(sed "s/{{NUMBER_TASK}}/$TASK_NUMBER/g" "$PROMPT_FILE")
+PROMPT=$(sed "s/{{TASK_NUMBER}}/$TASK_NUMBER/g" "$PROMPT_FILE")
 
-claude --allowedTools "Write,Edit" --model claude-opus-4-6 "$PROMPT"
+claude --permission-mode plan --model claude-opus-4-6 "$PROMPT"
