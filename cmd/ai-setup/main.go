@@ -1,7 +1,7 @@
 package main
 
 import (
-	"ai-setup/cmd"
+	"ai-setup/internal/cmd"
 	"os"
 )
 

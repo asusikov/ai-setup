@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"ai-setup/domain"
+	"ai-setup/internal/domain"
 	"fmt"
 
 	"github.com/spf13/cobra"
