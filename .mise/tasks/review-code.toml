@@ -1,0 +1,3 @@
+[review-code]
+description = "Review code in current branch against main"
+run = ".agents/review_code.sh"
