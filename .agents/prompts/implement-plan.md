@@ -21,12 +21,16 @@ The implementation plan and the feature specification are in memory bank
 
 # Workflow
 For each phase:
-1. Read the phase objective and tasks
-2. Implement each task
-3. Run the validation steps defined for that phase
-4. Fix any issues before proceeding to the next phase
+1. Check if all tasks in the phase are already marked as `[x]` — if so, skip the phase
+2. Read the phase objective and tasks
+3. Implement each task
+4. Run the validation steps defined for that phase
+5. Fix any issues before proceeding to the next phase
+6. Mark all completed tasks in the plan file by changing `- [ ]` to `- [x]`
 
 After all phases are complete:
 1. Run tests to verify all of them pass
 2. Verify test coverage
-3. Report a summary of what was implemented and any issues encountered
+3. Run code review: read and follow the instructions in `review-code` prompt (`.agents/prompts/review-code.md`)
+4. Fix any critical issues found in the review
+5. Report a summary of what was implemented and any issues encountered

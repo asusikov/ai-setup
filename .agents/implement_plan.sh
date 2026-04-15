@@ -14,4 +14,4 @@ fi
 
 PROMPT=$(sed "s/{{TASK_NUMBER}}/$TASK_NUMBER/g" "$PROMPT_FILE")
 
-claude --permission-mode auto --model claude-haiku-4-5-20251001 "$PROMPT"
+claude -p --permission-mode auto --model claude-haiku-4-5-20251001 "$PROMPT"
