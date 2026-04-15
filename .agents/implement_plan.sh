@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Usage: ./run_review_spec.sh <task_number>
+# Usage: ./implement_plan.sh <task_number>
 
 TASK_NUMBER=${1:?"Usage: $0 <task_number>"}
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROMPT_FILE="$SCRIPT_DIR/prompts/review-spec.md"
+PROMPT_FILE="$SCRIPT_DIR/prompts/implement-plan.md"
 
 if [[ ! -f "$PROMPT_FILE" ]]; then
   echo "Error: Prompt file '$PROMPT_FILE' not found."
@@ -14,4 +14,4 @@ fi
 
 PROMPT=$(sed "s/{{TASK_NUMBER}}/$TASK_NUMBER/g" "$PROMPT_FILE")
 
-codex "$PROMPT"
+claude -p --permission-mode auto --model claude-haiku-4-5-20251001 "$PROMPT"

@@ -1,0 +1,4 @@
+[generate-spec]
+description = "Generate spec from GitHub issue"
+usage = 'arg "<task_number>" help="GitHub issue number"'
+run = ".agents/generate_spec.sh ${usage_task_number?}"

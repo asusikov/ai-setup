@@ -1,0 +1,4 @@
+[review-spec]
+description = "Review spec"
+usage = 'arg "<task_number>" help="GitHub issue number"'
+run = ".agents/review_spec.sh ${usage_task_number?}"

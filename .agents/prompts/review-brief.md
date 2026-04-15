@@ -14,4 +14,4 @@ For each comment found, specify:
 
 If there are no comments, write “0 comments, Brief is ready to go.”
 
-Write you answer in file with name "review-brief.md" and place it in folder with specifications for task. 
+Write you answer in file with name "brief-review.md" and place it in folder with specifications for task. 

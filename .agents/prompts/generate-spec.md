@@ -11,6 +11,7 @@ Generate a complete and implementation-ready spec.md document.
 The spec must:
 - Be clear, precise, and unambiguous
 - Contain ONLY information supported by the input brief/context
+- Don't contain any code snippets
 - Explicitly mark assumptions where requirements are unclear
 - Identify missing or ambiguous areas as Open Questions
 - Be implementation-oriented but NOT include low-level coding details

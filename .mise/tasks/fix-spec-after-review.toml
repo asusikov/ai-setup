@@ -1,0 +1,4 @@
+[fix-spec-after-review]
+description = "Fix spec after review"
+usage = 'arg "<task_number>" help="GitHub issue number"'
+run = ".agents/fix_spec_after_review.sh ${usage_task_number?}"

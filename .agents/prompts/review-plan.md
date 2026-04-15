@@ -1,4 +1,4 @@
-You are the implementation plan reviewer. Check this plan for feasibility and correctness.
+You are the implementation plan reviewer. Check the plan for task {{TASK_NUMBER}} for feasibility and correctness.
 
 Criteria:
 1. Each step is specific—it is clear which file is affected and exactly what is changing
@@ -14,5 +14,5 @@ For each issue found:
 
 If there are no issues — write “0 issues, plan ready for implementation.”
 
-Write you review in file with name "review-plan.md" and place it in folder with specifications for task. 
+Write you review in file with name "plan-review.md" and place it in folder with specifications for task. 
 
